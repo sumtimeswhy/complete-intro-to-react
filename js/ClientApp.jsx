@@ -22,6 +22,10 @@ const MyFirstComponent = function () {
     ce(MyTitle, {
       title: 'Stranger Things',
       color: 'peru'
+    }),
+    ce(MyTitle, {
+      title: 'The Americans',
+      color: 'blue'
     })
   );
 };
