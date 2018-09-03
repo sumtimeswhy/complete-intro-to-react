@@ -7,15 +7,15 @@ class Search extends Component {
     super(props);
 
     this.state = {
-      searchTerm: 'debug'
+      searchTerm: ''
     };
 
     this.handleSearch = this.handleSearch.bind(this);
-  };
+  }
 
   handleSearch(event) {
     this.setState({ searchTerm: event.target.value });
-  };
+  }
 
   render() {
     return (
@@ -29,8 +29,8 @@ class Search extends Component {
           {preload.shows.map((show) => <ShowCard key={show.imdbID} show={show} />)};
         </div>
       </div>
-    )
+    );
   }
-};
+}
 
 export default Search;
