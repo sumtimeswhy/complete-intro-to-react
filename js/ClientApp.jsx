@@ -11,10 +11,10 @@ const ErrorNotFound = () => <h1>404 Not Found</h1>;
 // 404 route matches every path so need switch
 const App = () => (
   <BrowserRouter>
-    <div className='app'>
+    <div className="app">
       <Switch>
-        <Route exact path='/' component={Landing} />
-        <Route path='/search' component={Search} />
+        <Route exact path="/" component={Landing} />
+        <Route path="/search" component={Search} />
         <Route component={ErrorNotFound} />
       </Switch>
     </div>
